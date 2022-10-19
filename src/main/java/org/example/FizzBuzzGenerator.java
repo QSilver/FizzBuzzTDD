@@ -3,7 +3,7 @@ package org.example;
 import java.util.HashMap;
 
 public class FizzBuzzGenerator {
-    private PrintService printService;
+    private final PrintService printService;
     HashMap<Integer, String> fizzBuzzMap = new HashMap<>();
 
     public FizzBuzzGenerator(PrintService printService) {

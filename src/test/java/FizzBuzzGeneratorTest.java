@@ -17,49 +17,42 @@ public class FizzBuzzGeneratorTest {
     @Test
     void testFizz() {
         underTest.generate(3);
-
         verify(mockPrintService).print("fizz");
     }
 
     @Test
     void testBuzz() {
         underTest.generate(5);
-
         verify(mockPrintService).print("buzz");
     }
 
     @Test
     void testPop() {
         underTest.generate(7);
-
         verify(mockPrintService).print("pop");
     }
 
     @Test
     void testFizzBuzz() {
         underTest.generate(15);
-
         verify(mockPrintService).print("fizzbuzz");
     }
 
     @Test
     void testFizzPop() {
         underTest.generate(21);
-
         verify(mockPrintService).print("fizzpop");
     }
 
     @Test
     void testBuzzPop() {
         underTest.generate(35);
-
         verify(mockPrintService).print("buzzpop");
     }
 
     @Test
     void testNumber() {
         underTest.generate(2);
-
         verify(mockPrintService).print("2");
     }
 }
